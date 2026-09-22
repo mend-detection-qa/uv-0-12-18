@@ -1,0 +1,6 @@
+# requirements.txt — uv-pip-json-output probe
+# Direct dependencies pinned for reproducibility.
+# Generated for Mend SCA probe: uv-pip-json-output
+# Exercises uv 0.12.18 --output-format json on uv pip install / uv pip sync.
+requests==2.32.3
+click==8.1.7
