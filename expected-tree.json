@@ -1,0 +1,96 @@
+{
+  "generated_at": "2026-09-22T23:31:32Z",
+  "packages": {
+    "certifi": {
+      "dependencies": [],
+      "group": "main",
+      "marker": null,
+      "source": "registry",
+      "source_detail": {
+        "dist": "certifi",
+        "python_versions": ">=3.6"
+      },
+      "version": "2024.8.30"
+    },
+    "charset-normalizer": {
+      "dependencies": [],
+      "group": "main",
+      "marker": null,
+      "source": "registry",
+      "source_detail": {
+        "dist": "charset-normalizer",
+        "python_versions": ">=3.7"
+      },
+      "version": "3.4.0"
+    },
+    "click": {
+      "dependencies": [],
+      "group": "main",
+      "marker": null,
+      "source": "registry",
+      "source_detail": {
+        "dist": "click",
+        "python_versions": ">=3.7"
+      },
+      "version": "8.1.7"
+    },
+    "idna": {
+      "dependencies": [],
+      "group": "main",
+      "marker": null,
+      "source": "registry",
+      "source_detail": {
+        "dist": "idna",
+        "python_versions": ">=3.5"
+      },
+      "version": "3.10"
+    },
+    "requests": {
+      "dependencies": [
+        "certifi",
+        "charset-normalizer",
+        "idna",
+        "urllib3"
+      ],
+      "group": "main",
+      "marker": null,
+      "source": "registry",
+      "source_detail": {
+        "dist": "requests",
+        "python_versions": ">=3.8"
+      },
+      "version": "2.32.3"
+    },
+    "urllib3": {
+      "dependencies": [],
+      "group": "main",
+      "marker": null,
+      "source": "registry",
+      "source_detail": {
+        "dist": "urllib3",
+        "python_versions": ">=3.8"
+      },
+      "version": "2.2.3"
+    }
+  },
+  "pm": "uv",
+  "pm_version_tested": "0.12.18",
+  "pm_version_under_test": "0.12.18",
+  "project_metadata": {
+    "python_constraint": ">=3.11"
+  },
+  "root": {
+    "dependencies": [
+      "click",
+      "requests"
+    ],
+    "name": "uv-pip-json-output-probe",
+    "version": "0.1.0"
+  },
+  "schema_version": "1.2",
+  "source_file": "requirements.txt",
+  "warnings": [
+    "pip-mode probe: no uv.lock present. Mend uses the Pip resolver (pip download + pipdeptree) on requirements.txt. The uv 0.12.18 --output-format json change affects uv pip install CLI output — this expected tree encodes what the Pip resolver should produce; if a future UA version shells out to uv pip install, re-verify against actual scan output.",
+    "click 8.1.7 has no non-stdlib runtime transitive dependencies; its dependencies array is empty by design."
+  ]
+}
