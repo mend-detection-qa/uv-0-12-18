@@ -1,0 +1,12 @@
+[project]
+name = "uv-pip-json-output-probe"
+version = "0.1.0"
+description = "Mend SCA probe: uv 0.12.18 --output-format json on uv pip install/sync"
+requires-python = ">=3.11"
+# No [project.dependencies] — deps come from requirements.txt (pip mode).
+# This is intentional: the probe exercises the pip-resolver path, not
+# the uv-workspace / uv.lock path.
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
